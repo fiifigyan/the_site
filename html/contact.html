@@ -16,9 +16,9 @@
       <a href="/index.html" class="logo">startDoin</a>
       <i class='bx bx-menu' id="menu-icon"></i>
       <nav class="navbar">
-          <a href="/index.html">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#sevice">Services</a>
           <a href="/html/contact.html">Contact</a>
       </nav>
   </header>
@@ -28,8 +28,8 @@
       <div class="form">
 
         <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
-          <p class="text">Let's hear your suggestions and we are ever ready to respond.</p>
+          <h2 class="title">Get in Touch</h2>
+          <p class="text">Have questions? Need to schedule an appointment? Contact us today.</p>
 
           <div class="info">
             <div class="information">
@@ -63,13 +63,13 @@
         </div>
 
         <div class="contact-form">
-          <form action="#">
+          <form action="appointment.php" method="post">
             <h3 class="title">Contact us</h3>
 
             <div class="input-container">
-              <input required id="username" autocomplete="off" type="text" name="name" class="input" />
-              <label for="username">Username</label>
-              <span>Username</span>
+              <input required id="full name" autocomplete="off" type="text" name="name" class="input" />
+              <label for="full name">Full name</label>
+              <span>Full name</span>
             </div>
 
             <div class="input-container">
@@ -84,14 +84,26 @@
               <span>Phone</span>
             </div>
 
+            <div class="input-container">
+              <input id="date" autocomplete="off" type="tel" name="phone" class="input" />
+              <label for="date">Date</label>
+              <span>Date</span>
+            </div>
+
+            <div class="input-container">
+              <input id="time" autocomplete="off" type="tel" name="phone" class="input" />
+              <label for="time">Time</label>
+              <span>Time</span>
+            </div>
+
             <div class="input-container textarea">
               <textarea id="message" name="message" class="input"></textarea>
               <label for="message">Message</label>
               <span>Message</span>
             </div>
 
-            <input type="submit" value="Reset" class="btn" />
-            <input type="submit" value="Submit" class="btn" />
+            <!-- <input type="submit" value="Reset" class="btn" /> -->
+            <input type="submit" value="Book Appointment" class="btn">
           </form>
         </div>
 

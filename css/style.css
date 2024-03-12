@@ -1,1 +1,211 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+.main{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+}
+
+.home{
+    height: 100vh;
+    background-image: url("/image/smile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.welcome{
+    width: 30rem;
+    height: 12.5rem;
+    float: left;
+    padding: 1.5rem;
+    position: absolute;
+    top: 15rem;
+    left: 6rem;
+    background-color: transparent;
+    backdrop-filter: blur(10px); 
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    z-index: 1; 
+    font-size: 1rem;
+    line-height: 24px;
+    word-spacing: 0;
+    text-align: left;
+}
+
+.welcome h2{
+    color: aliceblue;
+    font-size: 2.25rem;
+    line-height: 42px;
+    font-weight: 700;
+    word-spacing: 0;
+    text-align: left;
+}
+
+.welcome p{
+    color: aqua;
+    font-size: 1rem;
+    line-height: 24px;
+    word-spacing: 0;
+    text-align: left;
+}
+
+.services{
+    height: 100vh;
+    background-image: url("/image/girltooth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.services h2,.abt h2{
+    width: 20rem;
+    margin: auto;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 700;
+    word-spacing: 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.service-con{
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    inset: 0;
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(50px); 
+    z-index: 1; 
+}
+
+.service-box{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    inset: 0;
+    position: relative;
+    top: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    place-items: center;
+}
+.service-card{
+    width: 100%; 
+    height: 100%;
+    border: 1px solid  #eaeaea;
+    border-radius: 1rem;
+}
+.service-card:hover{
+    cursor: pointer;
+    transform: scale(1.03) translateY(-6px);
+}
+.service-card:hover h3{
+    color: greenyellow;
+}
+.service-card h3{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 700;
+    word-spacing: 0;
+    text-align: center;
+}
+#cleaning{
+    background-image: url("/image/cleaning.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#extraction{
+    background-image: url("/image/wis-tooth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#removal{
+    background-image: url("/image/removal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#filling{
+    background-image: url("/image/filling.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#root-canal{
+    background-image: url("/image/rootcanal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#crowns{
+    background-image: url("/image/bridges.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#veneers{
+    background-image: url("/image/venner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#bonding{
+    background-image: url("/image/bonding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about{
+    height: 100vh;
+    background-image: url("/image/skull.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 1rem;
+    color: red;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    height: 12.5rem;
+}
+.components{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: red;
+    text-align: left;
+
+}
+
+@media  screen and (max-width : 768px) {  
+    .welcome{
+        width: 100%;
+        margin: auto;
+        inset: 0;
+    }
+    .service-con{
+        width: 100%;
+        top: 0;
+    }
+    .service-box{
+        grid-template-columns:  repeat(2, 1fr);
+    }
+}
