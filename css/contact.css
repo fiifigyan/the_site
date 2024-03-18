@@ -244,46 +244,46 @@ textarea.input {
   @media screen and (max-width: 768px) {
     body{
     height: 60rem;
-  }
-  .form {
-    width: 100%;
-    grid-template-columns: 1fr;
-  }
-  .text {
-    margin: 1rem 0 1.5rem 0;
-  }
-  .social-media {
-    padding: 1.5rem 0 0 0;
-  }
-  .container {
-    width: 90%;
-    margin: auto;
-    left: 5%;
-    top: 10%;
-    padding: 1.5rem;
-    z-index: -1000;
-  }
-  form,
-  .contact-info {
-    padding: 1.7rem 1.6rem;
-  }
-  .text,
-  .information,
-  .social-media p {
-    font-size: 0.8rem;
-  }
-  .title {
-    font-size: 1.15rem;
-  }
-  .social-icons a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-  .input {
-    padding: 0.45rem 1.2rem;
-  }
-  .btn {
-    padding: 0.45rem 1.2rem;
-  }
+    }
+    .form {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+    .text {
+      margin: 1rem 0 1.5rem 0;
+    }
+    .social-media {
+      padding: 1.5rem 0 0 0;
+    }
+    .container {
+      width: 100%;
+      margin: auto;
+      left: 0;
+      top: 10%;
+      padding: 1.5rem;
+      z-index: -1000;
+    }
+    form,
+    .contact-info {
+      padding: 1.7rem 1.6rem;
+    }
+    .text,
+    .information,
+    .social-media p {
+      font-size: 0.8rem;
+    }
+    .title {
+      font-size: 1.15rem;
+    }
+    .social-icons a {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+    .input {
+      padding: 0.45rem 1.2rem;
+    }
+    .btn {
+      padding: 0.45rem 1.2rem;
+    }
 }

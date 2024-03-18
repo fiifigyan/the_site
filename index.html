@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale.0">
-    <title>Responsive Navbar </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://unpkg.com/boxicons@2.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/rest-all.css" type="text/css">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/reset.css" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <body>
@@ -16,7 +16,7 @@
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home">Home</a>
-            <a href="about">About</a>
+            <a href="/html/about.html">About</a>
             <a href="#service">Services</a>
             <a href="/html/contact.html">Contact</a>
         </nav>
@@ -32,8 +32,30 @@
         </div>
 
         <div class="about" id="about">
+            <h2 class="h2">about us</h2>
             <div class="abt">
-                <h2>about us</h2>
+                <div class="vision">
+                    <p>At <strong>startDoin Dental Center</strong>, we believe that a healthy smile is the cornerstone of 
+                        overall well-being. Our dedicated team of experienced dentists and compassionate staff is committed 
+                        to providing exceptional dental care in a warm and welcoming environment.
+                    </p>
+                </div>
+
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is simple: <strong>to enhance lives one smile at a time</strong>. 
+                        We strive to achieve this by delivering personalized, comprehensive dental services that prioritize your comfort, health, and confidence.
+                    </p>
+                </div>
+                <div class="team">
+                    <h3>Meet Our Team</h3>
+                    <p><strong>Dr. Christian Gyan, DMD</strong><br>
+                        Founder and Lead Dentist<br>
+                        Dr. Gyan brings over 15 years of experience to our practice. He is passionate about preventive dentistry and believes in educating patients to maintain optimal oral health.
+                        Dr. Gyan is a member of the Ghanaian Dental Association (GDA) and stays updated with the latest advancements in dentistry.
+                    </p>
+                    <button type="button" class="read-me" ><a href="/html/about.html">Read Me</a></button>
+                </div>
             </div>
         </div>
 
@@ -68,47 +90,51 @@
                 </div>
             </div>
         </div>
+
         <footer>
             <div class="components">
-                <div class="foot-logo"><a href="#">startDoin</a></div>
-                <div class="location">
-                    <label for="location">Location</label>
-                    <select name="location" id="location">
-                        <option value="ghana">Ghana</option>
-                        <option value="usa">USA</option>
-                        <option value="uk">UK</option>
-                        <option value="canada">Canada</option>
-                        <option value="rwanda">Rwanda</option>
-                    </select>
-                </div>
-                <div class="media">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-
-                <div class="customer-service">
-                    <h2>Customer Service:</h2>
-                    <div class="cus-directories">
-                        <a href=""><p>sitemap</p></a>
-                        <a href="mailto:info@startdoin.com?subject=General%20Inquiry">Email Us</a>
+                <div class="comp">
+                    <a class="logo" href="/index.html">startDoin</a>
+                    <div class="location">
+                        <label for="location">Location</label>
+                        <select name="location" id="location">
+                            <option value="ghana">Ghana</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                            <option value="canada">Canada</option>
+                            <option value="rwanda">Rwanda</option>
+                        </select>
+                    </div>
+                    <div class="media">
+                        <h3>Follow us on:</h3>
+                        <div class="handles">
+                            <a href="#" id="facebook" style="color: aliceblue;">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" id="x-twitter" style="color: aliceblue;">
+                                <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+                            </a>
+                            <a href="#" id="instagram" style="color: aliceblue;">
+                                <i class="fa-brands fa-instagram" style="color: aliceblue;"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="customer-service">
+                        <h2>Customer Service:</h2>
+                        <div class="cus-directories">
+                            <a href="mailto:fiifigyan22@gmail.com?subject=General%20Inquiry">Email Us</a>
+                            <a href="tel:+233248176588">Call Us</a>
+                            <a href="">Sitemap</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="copy-right">
-                <p class="all-right">&copy; 2024 startDoin Dentist Pro. All rights reserved.</p>
-                <p class="notice-info">
+                <p class="all-right">&copy; 2024 startDoin. All rights reserved.</p>
+                <p>
                     This web site is directed only to Ghanaian consumers for products and services of Unilever Ghana.<br>
-                    This web site is not directed to consumers outside of the Ghana
+                    This web site is not directed to consumers outside of the Ghana.
                 </p>
             </div>
         </footer>

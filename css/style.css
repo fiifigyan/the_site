@@ -2,9 +2,7 @@
 .main{
     width: 100%;
     height: 100vh;
-    /* position: relative; */
 }
-
 .home{
     height: 100vh;
     background-image: url("/image/smile.jpg");
@@ -13,25 +11,23 @@
     background-position: center;
     background-attachment: scroll;
 }
-
 .welcome{
     width: 30rem;
     height: 12.5rem;
     float: left;
     padding: 1.5rem;
     position: absolute;
-    top: 15rem;
+    top: 20rem;
     left: 6rem;
     background-color: transparent;
-    backdrop-filter: blur(10px); 
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px) brightness(90%); 
+    border-radius: 1rem;
     z-index: 1; 
     font-size: 1rem;
     line-height: 24px;
     word-spacing: 0;
     text-align: left;
 }
-
 .welcome h2{
     color: aliceblue;
     font-size: 2.25rem;
@@ -40,7 +36,6 @@
     word-spacing: 0;
     text-align: left;
 }
-
 .welcome p{
     color: aqua;
     font-size: 1rem;
@@ -48,7 +43,62 @@
     word-spacing: 0;
     text-align: left;
 }
-
+.about{
+    height: 100vh;
+    background-image: url("/image/docs-1.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+.abt{
+    background-color: transparent;
+    backdrop-filter: blur(10px) brightness(60%);
+    color: aliceblue;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.abt h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.abt strong{
+    color: #000;
+    background-color: aliceblue;
+}
+.team .read-me a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.team .read-me:hover{
+    color: rgb(45, 45, 45);
+    font-weight: 500;
+}
+.team .read-me{
+    width: auto;
+    text-align: center;
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px) brightness(20%);
+    z-index: 100;
+    border: none;
+    border-radius: .6rem;
+    padding: .3rem .5rem;
+    margin-top: .5rem;
+}
+.team .read-me:hover{
+    background: transparent;
+    border: 1px solid aliceblue;
+    cursor: pointer;
+}
+.abt .vision p{
+    color: aliceblue;
+    text-align: left;
+    align-items: flex-start;
+}
 .services{
     height: 100vh;
     background-image: url("/image/girltooth.jpg");
@@ -57,8 +107,7 @@
     background-position: center;
     background-attachment: scroll;
 }
-
-.services h2,.abt h2{
+.services h2,.about h2{
     width: 20rem;
     margin: auto;
     color: aliceblue;
@@ -69,7 +118,6 @@
     text-align: center;
     padding: 2rem 0;
 }
-
 .service-con{
     width: 90%;
     height: 75%;
@@ -80,7 +128,6 @@
     backdrop-filter: blur(50px); 
     z-index: 1; 
 }
-
 .service-box{
     width: 90%;
     height: 80%;
@@ -96,7 +143,7 @@
 .service-card{
     width: 100%; 
     height: 100%;
-    border: 1px solid  #eaeaea;
+    border: none;
     border-radius: 1rem;
 }
 .service-card:hover{
@@ -162,44 +209,146 @@
     background-size: cover;
     background-position: center;
 }
-
-.about{
-    height: 100vh;
-    background-image: url("/image/skull.jpg");
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    height: 25rem;
+    background-image: url(/image/tree.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
 }
-
-footer{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    align-items: center;
-    padding: 1rem;
-    color: red;
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-    height: 12.5rem;
-}
 .components{
     width: 100%;
+    height: 20rem;
+    align-items: center;
+    padding: 1rem;
+    color: aliceblue;
+    text-align: left;
+    /* background-color: blue; */
+    /* border-bottom: 5px solid red; */
+}
+.comp{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    color: red;
+    align-items: flex-start;
+    place-self: center center;
+    gap: 2rem;
+    position: relative;
+    top: 30%;
+}
+footer .logo{
+    flex-basis: 25%;
+}
+footer .logo:hover{
+    cursor: pointer;
+}
+.location{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+.location label{
+    font-size: 1.5rem;
+}
+#location{
+    width: 50%;
+    align-items: flex-start;
+    border: none;
+    background: none;
+    color: aliceblue;
+}
+#location:focus{
+    outline: none;
+}
+#location:hover{
+    color: darkgrey;
+}
+.media{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: aliceblue;
+}
+.media h3{
+    font-size: 1.25rem;
+    color: aliceblue;
+}
+.media .handles{
+    display: inline-flex;
+    flex-direction: row;
+   align-items: flex-start;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: aliceblue;
+}
+.media .handles a:hover{
+    transform: scale(1.2);
+}
+#facebook:hover{
+    color: #3b5998;
+}
+.customer-service{
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    align-items: flex-start;
     text-align: left;
-
+}
+.cus-directories{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.cus-directories a{
+    width: 100%;
+    text-align: left;
+    color: aliceblue;
+}
+.copy-right{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem;
+    text-align: left;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.copy-right p:first-child{
+    color: aliceblue;
+    font-size: .6rem;
+}
+.copy-right p:last-child{
+    color: aliceblue;
+    font-size: .8rem;
 }
 
+/* Breakpoint */
 @media  screen and (max-width : 768px) {  
     .welcome{
         width: 100%;
+        height: 15rem;
         margin: auto;
         inset: 0;
+        top: 50%;
+        backdrop-filter: blur(50px); 
+    }
+    .welcome  h2{
+        font-size: 2rem;
     }
     .service-con{
         width: 100%;
@@ -207,5 +356,23 @@ footer{
     }
     .service-box{
         grid-template-columns:  repeat(2, 1fr);
+    }
+    .components{
+        height: 17rem;
+    }
+    .comp{
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-content: center;
+        gap: 1rem;
+        top: 10%;
+    }
+    .copy-right p{
+        height: 7rem;
+        width: 100%;
+        padding: 0 1rem;
+        color: aliceblue;
+        text-align: left;
     }
 }

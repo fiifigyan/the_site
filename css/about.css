@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+body{
+    background-image: url(/image/tree.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(10px) brightness(90%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.empty{
+    height: 5rem;
+}
+h1, h2 {
+    color: aliceblue;
+}
+p {
+    color: aliceblue;
+}
+p strong{
+    color: #666;
+}
+ul {
+    list-style: none;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    padding: 1rem;
+    backdrop-filter: blur(50px) brightness(10%);
+    z-index: 100;
+}
+ul li{
+    color: aliceblue;
+    line-height: 2rem;
+}
+ul li strong{
+    color: black;
+}
+.testimonial {
+    font-style: italic;
+    color: lightgray;
+}
+.contact-info {
+    margin-top: 20px;
+}
